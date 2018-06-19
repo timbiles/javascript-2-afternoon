@@ -172,12 +172,13 @@ logHello();
   Return a new object with all of the information that you passed in.
 */
 
-var makePerson = function(name, birthday, ssn){
-  var object = {};
-    object.name = name,
-    object.birthday = birthday,
-    object.ssn = ssn;
-  return newPerson;
+function makePerson(name, birthday, ssn){
+  var person = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+  return person;
 }
 
 
@@ -189,6 +190,13 @@ var makePerson = function(name, birthday, ssn){
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-// var makeCard = function(cardNumber, expirationDate, secur)
+function makeCard(cardNumber, expirationDate, securityCode){
+  var newCard = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  return newCard;
+}
 
 
